@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution Ads</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(270deg, #ff7e5f, #00c6ff);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #ffffff;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            margin: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        header img {
+            max-width: 200px;
+            animation: shine 4s infinite linear;
+        }
+        @keyframes shine {
+            0% { filter: brightness(1); }
+            50% { filter: brightness(1.4); }
+            100% { filter: brightness(1); }
+        }
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, textarea {
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1em;
+        }
+        .btn {
+            background: linear-gradient(90deg, #ff7e5f, #feb47b, #00c6ff);
+            background-size: 200% 200%;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            color: white;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-position 0.5s ease;
+        }
+        .btn:hover {
+            background-position: right center;
+        }
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3);
+            font-size: 0.9em;
+        }
+        .whatsapp-btn {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .whatsapp-btn:hover {
+            background-color: #1ebe57;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="img/logo-clara.jpg" alt="Solution Ads Logo">
+    </header>
+
+    <main>
+        <h1>Impulsione seu Negócio com a Solution Ads</h1>
+        <p>Especialistas em Google Ads prontos para levar sua empresa ao topo!</p>
+
+        <form action="https://formsubmit.co/solutionads.mkt@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <textarea name="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </main>
+
+    <a href="https://wa.me/5511994191050" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer>
+        &copy; 2025 Solution Ads. Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
